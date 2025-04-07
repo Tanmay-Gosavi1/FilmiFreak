@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmiFreak - Book Movies Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <a href="try.html" class="logo">Filmi<span>Freak</span></a>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for Movies and Events" id="search-input">
+                <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="auth-buttons">
+                <a href="#" class="auth-btn login-btn">Login</a>
+                <a href="#" class="auth-btn signup-btn">Sign Up</a>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-links">
+                <div class="main-links">
+                    <a href="#">Home</a>
+                    <a href="#">Movies</a>
+                    <a href="#">Events</a>
+                </div>
+                
+                <div class="secondary-links">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Gandhinagar</span>
+                    </div>
+                    <i class="fa-solid fa-bell" id="notification" title="No Notifications"></i>
+                    <a href="#" id="offer-btn">Offers</a>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <img src="https://i.pinimg.com/originals/73/c5/d1/73c5d17994b76d138d2743f1d5e65187.jpg" alt="Hero Banner" class="hero-image">
+        <div class="hero-content">
+            <h1>Book Your Entertainment Experience</h1>
+            <p>Tickets for Movies, Events, Plays, Sports & Activities</p>
+            <button class="hero-btn" id="explore-now">Explore Now</button>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="main-content" id="movies-section">
+        <h2 class="section-title">Now Showing</h2>
+        
+        <div class="movie-grid">
+            <!-- Movie Card 1 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://i.etsystatic.com/23817450/r/il/c76ecc/2976262986/il_fullxfull.2976262986_oec9.jpg">
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i> 4.5
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Godzilla vs Kong</h3>
+                    <p class="movie-genre">Action, Sci-Fi | 2h 13m</p>
+                    <button class="book-btn" data-movie="220"
+                            data-title="Godzilla vs Kong" 
+                            data-genre="Action, Sci-Fi" 
+                            data-duration="2h 13m" 
+                            data-rating="4.5" 
+                            data-poster="https://i.etsystatic.com/23817450/r/il/c76ecc/2976262986/il_fullxfull.2976262986_oec9.jpg" 
+                            data-description="Legends collide as Godzilla and Kong, the two most powerful forces of nature, clash in a spectacular battle for the ages."
+                            data-cast="Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Movie Card 2 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202208/Radhe_1_1661409137.jpg" alt="Radhe">
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i> 3.8
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Radhe</h3>
+                    <p class="movie-genre">Action, Thriller | 1h 55m</p>
+                    <button class="book-btn" data-movie="320"
+                            data-title="Radhe" 
+                            data-genre="Action, Thriller" 
+                            data-duration="1h 55m" 
+                            data-rating="3.8" 
+                            data-poster="https://assets.gadgets360cdn.com/pricee/assets/product/202208/Radhe_1_1661409137.jpg" 
+                            data-description="An honest cop is determined to bring down a corrupt drug mafia, who targets youth to drive towards drug addiction."
+                            data-cast="Salman Khan , Disha Patani">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Movie Card 3 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://www.xinemas.com/data/upload/movies/2022/rrr.jpg" alt="RRR">
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i> 4.8
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">RRR</h3>
+                    <p class="movie-genre">Action, Drama | 3h 7m</p>
+                    <button class="book-btn" data-movie="250"
+                            data-title="RRR" 
+                            data-genre="Action, Drama" 
+                            data-duration="3h 7m" 
+                            data-rating="4.8" 
+                            data-poster="https://www.xinemas.com/data/upload/movies/2022/rrr.jpg" 
+                            data-description="A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India."
+                            data-cast="Jr NTR, Ram Charan">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Movie Card 4 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://th.bing.com/th/id/OIP.KZU-dd1QYWDGT1XKyMi5AwHaKj?w=156&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="F9">
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i> 4.2
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">F9</h3>
+                    <p class="movie-genre">Action, Adventure | 2h 25m</p>
+                    <button class="book-btn" data-movie="260"
+                            data-title="F9" 
+                            data-genre="Action, Adventure" 
+                            data-duration="2h 25m" 
+                            data-rating="4.8" 
+                            data-poster="https://th.bing.com/th/id/OIP.KZU-dd1QYWDGT1XKyMi5AwHaKj?w=156&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                            data-description="Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother."
+                            data-cast="Vin Diesel , Michelle Rodriguez">
+                        Book Now
+                    </button>
+		        </div>
+            </div>
+
+            <!-- Movie Card 5 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://th.bing.com/th/id/OIP.9lv5wSzSSLeH5AuXJr5B3wAAAA?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Chhava">
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Chhava</h3>
+                    <p class="movie-genre">Action, History | 2h 25m</p>
+                    <button class="book-btn" data-movie="270"
+                            data-title="Chhava" 
+                            data-genre="Action, History" 
+                            data-duration="2h 25m" 
+                            data-rating="4.9" 
+                            data-poster="https://th.bing.com/th/id/OIP.9lv5wSzSSLeH5AuXJr5B3wAAAA?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                            data-description="A historical drama based on the life of Chhatrapati Sambhaji Maharaj, the son of Chhatrapati Shivaji Maharaj."
+                            data-cast="Vicky Kaushal , Akshaye Khanna , Rashmika Mandanna">
+                        Book Now
+                    </button>
+		        </div>
+            </div>
+            
+        </div>
+        
+        <!-- Coming Soon Section -->
+        <div class="coming-soon">
+            <h2 class="section-title">Coming Soon</h2>
+            
+            <div class="movie-grid">
+                <!-- Coming Soon Movie 1 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://th.bing.com/th/id/OIP.dMNLaVeKF_CsNxuaB__gdgHaK-?rs=1&pid=ImgDetMain" alt="Black Widow">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i> 4.7
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Black Widow</h3>
+                        <p class="movie-genre">Action, Adventure | 2h 13m</p>
+                        <button class="coming-soonn">Coming Soon</button>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Movie 2 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://th.bing.com/th/id/OIP.ObuUWJK5OAYnnZoysGVaEgHaKy?w=156&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Top Gun: Maverick">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i> 4.9
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Top Gun: Maverick</h3>
+                        <p class="movie-genre">Action, Drama | 2h 17m</p>
+                        <button class="coming-soonn">Coming Soon</button>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Movie 3 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://th.bing.com/th/id/OIP.CRuYHgGhxUHe6Fx6cNsqlQHaLH?rs=1&pid=ImgDetMain" alt="No Time To Die">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i> 4.6
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">No Time To Die</h3>
+                        <p class="movie-genre">Action, Thriller | 2h 43m</p>
+                        <button class="coming-soonn">Coming Soon</button>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Movie 4 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://th.bing.com/th/id/OIP.Lh-Ijdohos0fNmOvcyjutQHaKz?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="The Batman">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i> 4.8
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Batman</h3>
+                        <p class="movie-genre">Action, Crime | 2h 56m</p>
+                        <button class="coming-soonn">Coming Soon</button>
+                    </div>
+                </div>
+                
+                
+                <!-- Coming Soon Movie 5 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://th.bing.com/th?id=OIF.G%2bbZ2x0xasLfvxM0ChpG1Q&w=215&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                        <div class="movie-rating">
+                            <i class="fas fa-star"></i> 4.8
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Sikandar</h3>
+                        <p class="movie-genre">Action, Love | 2h 56m</p>
+                        <button class="coming-soonn">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Offers Section -->
+    <section id="offerr" class="offers">
+        <h2 class="section-title">Offers & Promotions</h2>
+        
+        <div class="offers-container">
+            <!-- Offer 1 -->
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="offer-details">
+                    <h3 class="offer-title">First Time Users</h3>
+                    <p class="offer-description">Use code for flat ₹150 off on your first booking!</p>
+                    <div class="offer-code">WELCOME150</div>
+                </div>
+            </div>
+            
+            <!-- Offer 2 -->
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="offer-details">
+                    <h3 class="offer-title">Bank Offers</h3>
+                    <p class="offer-description">Get 10% discount on HDFC Bank cards.</p>
+                    <div class="offer-code">HDFC10</div>
+                </div>
+            </div>
+            
+            <!-- Offer 3 -->
+            <div class="offer-card">
+                <div class="offer-icon">
+                    <i class="fas fa-percent"></i>
+                </div>
+                <div class="offer-details">
+                    <h3 class="offer-title">Weekend Special</h3>
+                    <p class="offer-description">Flat 20% off on weekend bookings.</p>
+                    <div class="offer-code">WEEKEND20</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-column">
+                <h3>FilmiFreak</h3>
+                <p>Your one-stop destination for all your entertainment needs. Book movie tickets, events, plays, and more.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Movies Links -->
+            <div class="footer-column">
+                <h3>Movies</h3>
+                <ul>
+                    <li><a href="#">Latest Movies</a></li>
+                    <li><a href="#">Upcoming Movies</a></li>
+                    <li><a href="#">Now Showing</a></li>
+                    <li><a href="#">Bollywood</a></li>
+                    <li><a href="#">Hollywood</a></li>
+                </ul>
+            </div>
+            
+            <!-- Help Links -->
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="mailto:info@filmifreak.com">info@filmifreak.com</a></li>
+                    <li><a href="tel:+919023286530">+91 9023 286 530</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 FilmiFreak. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Booking Modal -->
+    <div id="booking-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Book Tickets</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="movie-details">
+                <div class="movie-banner">
+                    <img id="modal-poster" src="" alt="Movie Poster">
+                </div>
+                
+                <div class="movie-information">
+                    <h2 id="modal-title"></h2>
+                    <div class="movie-meta">
+                        <span id="modal-genre"></span>
+                        <span id="modal-duration"></span>
+                        <span id="modal-rating"></span>
+                    </div>
+                    
+                    <p id="modal-description"></p>
+                    
+                    <div class="movie-cast">
+                        <h4>Cast</h4>
+                        <div id="modal-cast" class="cast-list"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-section">
+                <div class="booking-date">
+                    <h3 class="date-title">Select Date</h3>
+                    <div class="date-slider">
+                        <div class="date-item active">
+                            <div class="date-day">Today</div>
+                            <div class="date-number">30</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-day">Mon</div>
+                            <div class="date-number">31</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-day">Tue</div>
+                            <div class="date-number">01</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-day">Wed</div>
+                            <div class="date-number">02</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-day">Thu</div>
+                            <div class="date-number">03</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-day">Fri</div>
+                            <div class="date-number">04</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-day">Sat</div>
+                            <div class="date-number">05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="theaters-list">
+                    <!-- Theater 1 -->
+                    <div class="theater-item">
+                        <h3 class="theater-name">
+                            <i class="fas fa-film"></i> Cinepolis: Downtown Mall
+                        </h3>
+                        <div class="theater-facilities">
+                            <span class="facility">M-Ticket</span>
+                            <span class="facility">F&B</span>
+                            <span class="facility">Recliner</span>
+                        </div>
+                        <div class="showtime-container">
+                            <div class="showtime">10:15 AM</div>
+                            <div class="showtime">01:00 PM</div>
+                            <div class="showtime">04:30 PM</div>
+                            <div class="showtime">07:45 PM</div>
+                            <div class="showtime">10:30 PM</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Theater 2 -->
+                    <div class="theater-item">
+                        <h3 class="theater-name">
+                            <i class="fas fa-film"></i> INOX: Megaplex
+                        </h3>
+                        <div class="theater-facilities">
+                            <span class="facility">M-Ticket</span>
+                            <span class="facility">F&B</span>
+                            <span class="facility">IMAX</span>
+                        </div>
+                        <div class="showtime-container">
+                            <div class="showtime">09:00 AM</div>
+                            <div class="showtime">12:15 PM</div>
+                            <div class="showtime">03:30 PM</div>
+                            <div class="showtime">06:45 PM</div>
+                            <div class="showtime">10:00 PM</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Theater 3 -->
+                    <div class="theater-item">
+                        <h3 class="theater-name">
+                            <i class="fas fa-film"></i> PVR: Phoenix Mall
+                        </h3>
+                        <div class="theater-facilities">
+                            <span class="facility">M-Ticket</span>
+                            <span class="facility">F&B</span>
+                            <span class="facility">Dolby Atmos</span>
+                        </div>
+                        <div class="showtime-container">
+                            <div class="showtime">10:00 AM</div>
+                            <div class="showtime">01:15 PM</div>
+                            <div class="showtime">04:30 PM</div>
+                            <div class="showtime">07:00 PM</div>
+                            <div class="showtime">09:45 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="seat-selection">
+                <div class="screen-container">
+                    <div class="screen"></div>
+                    <div class="screen-text">All eyes this way please!</div>
+                </div>
+                
+                <div class="seats-grid">
+                    <!-- Dynamically seats generated-->
+                </div>
+                
+                <div class="seat-info">
+                    <div class="seat-type">
+                        <div class="seat-icon available-icon"></div>
+                        <span>Available</span>
+                    </div>
+                    <div class="seat-type">
+                        <div class="seat-icon selected-icon"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div class="seat-type">
+                        <div class="seat-icon booked-icon"></div>
+                        <span>Booked</span>
+                    </div>
+                </div>
+                
+                <div class="booking-summary">
+                    <h3 class="summary-title">Booking Summary</h3>
+                    <div class="summary-info">
+                        <div class="summary-row">
+                            <span>Movie:</span>
+                            <span>Godzilla vs Kong</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Theater:</span>
+                            <span>Cinepolis: Downtown Mall</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Date & Time:</span>
+                            <span>Mar 30, 2025 | 4:30 PM</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Seats:</span>
+                            <span>-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Ticket Price:</span>
+                            <span>₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Convenience Fee:</span>
+                            <span>₹0</span>
+                        </div>
+                        <div class="summary-row summary-total">
+                            <span>Total Amount:</span>
+                            <span>₹0</span>
+                        </div>
+                    </div>
+                    <button class="proceed-btn">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
