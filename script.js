@@ -277,3 +277,22 @@ document.addEventListener('DOMContentLoaded', () => {
         totalAmountSpan.textContent = `₹${totalAmount}`;
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const proceedButton = document.querySelector('.proceed-btn');
+    const selectedSeatsSpan = document.querySelector('.summary-row:nth-child(4) span:last-child');
+    const totalAmountSpan = document.querySelector('.summary-total span:last-child');
+
+    proceedButton.addEventListener('click', () => {
+        const selectedSeats = selectedSeatsSpan.textContent.trim();
+        const totalAmount = totalAmountSpan.textContent.trim();
+
+        if (selectedSeats === '-' || totalAmount === '₹0') {
+            alert('Please select at least one seat to proceed.');
+        } else {
+            // Simulate proceeding to payment
+            alert(`🎟️ Success! Your booking is confirmed.\nThe popcorn’s waiting and the screen is calling! 🍿📽️\n\nSelected Seats: ${selectedSeats}\nTotal Amount: ${totalAmount}`);
+            window.location.href ="try.html"; // Redirect to the base path
+        }
+    });
+});
